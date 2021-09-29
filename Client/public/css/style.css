@@ -1,3 +1,12 @@
 .square {
-  height: 20vh;
+  height: 30vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+.jumbotron {
+  background-image: linear-gradient(to right, #007bff, #000);
+  color: #fff;
 }
