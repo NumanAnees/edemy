@@ -1,10 +1,10 @@
-import React from "react";
-
 const index = () => {
   return (
-    <div>
-      <h3>hello world from nextjs</h3>
-    </div>
+    <>
+      <h1 className="jumbotron text-center bg-primary square">
+        hello world from nextjs
+      </h1>
+    </>
   );
 };
 
