@@ -1,9 +1,19 @@
-const Navbar = () => {
+import Link from "next/link";
+const Nav = () => {
   return (
     <>
-      <p>Navbar top </p>
+      <Link href="/">
+        <a>App</a>
+      </Link>
+      <Link href="/login">
+        <a>Login</a>
+      </Link>
+
+      <Link href="/register">
+        <a>Register</a>
+      </Link>
     </>
   );
 };
 
-export default Navbar;
+export default Nav;

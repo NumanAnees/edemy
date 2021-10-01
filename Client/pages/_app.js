@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Nav from "../components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "../public/css/style.css";
@@ -6,7 +6,7 @@ import "../public/css/style.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
+      <Nav />
       <Component {...pageProps} />
     </>
   );
