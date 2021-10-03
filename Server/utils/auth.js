@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 
 export const hashPassword = (password) => {
-  return new promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     bcrypt.genSalt(12, (err, salt) => {
       if (err) {
         reject(err);
