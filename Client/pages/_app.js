@@ -8,7 +8,17 @@ import "react-toastify/dist/ReactToastify.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <ToastContainer position="top-center" />
+      <ToastContainer
+        position="top-center"
+        autoClose={4985}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />{" "}
       <Nav />
       <Component {...pageProps} />
     </>

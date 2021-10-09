@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const register = () => {
   const [name, setName] = useState("numan");
@@ -10,7 +11,7 @@ const register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(`http://localhost:8000/api/register`, {
+      const { data } = await axios.post(`/api/register`, {
         name,
         email,
         password,
