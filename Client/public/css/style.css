@@ -10,3 +10,24 @@
   background-image: linear-gradient(to right, #007bff, #000);
   color: #fff;
 }
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(to right, #6ab2ff, rgb(160, 111, 251));
+}
+.logo {
+  color: #007bff;
+  margin-left: 20px;
+  color: white;
+}
+.nav-element {
+  margin-left: auto;
+  padding: 9px;
+}
+
+.nav-element a {
+  margin: 0px 12px;
+  font-size: 1.1rem;
+  color: white;
+}
