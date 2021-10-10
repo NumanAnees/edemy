@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 const register = () => {
   const [name, setName] = useState("numan");
@@ -57,6 +58,12 @@ const register = () => {
             Submit
           </button>
         </form>
+        <p className="text-center p-3">
+          Already registered?
+          <Link href="/login">
+            <a> Login</a>
+          </Link>
+        </p>
       </div>
     </>
   );
