@@ -42,20 +42,19 @@ export const login = async (req, res) => {
     }
     //check passwords
     const match = await comparePassword(password, user.password);
-    if (match) {
-      //create Jwt
-      const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
-        expiresIn: "7d",
-      });
-      //return token and user to client,excluding hashed password
-      user.password = undefined;
-      //send token in cookie
-      res.cookie("token", token, {
-        httpOnly: true,
-      });
-      //send user as json response
-      res.json(user);
-    }
+
+    //create Jwt
+    const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "7d",
+    });
+    //return token and user to client,excluding hashed password
+    user.password = undefined;
+    //send token in cookie
+    res.cookie("token", token, {
+      httpOnly: true,
+    });
+    //send user as json response
+    res.json(user);
   } catch (err) {
     console.log(err);
     res.status(400).send("Error, try again...");
