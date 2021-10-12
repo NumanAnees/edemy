@@ -15,6 +15,13 @@
   flex-direction: row;
   align-items: center;
   background-image: linear-gradient(to right, #6ab2ff, rgb(160, 111, 251));
+  width: 100%;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #0000003d;
+  -webkit-backface-visibility: hidden;
 }
 .logo {
   color: #007bff;
